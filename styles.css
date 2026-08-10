@@ -381,29 +381,13 @@ h1, h2, h3, h4 {
 }
 .footer-bottom p { margin: 0; }
 
-/* ---------- Fixed "Book Now" button (always visible) ---------- */
+/* ---------- Sticky mobile call bar ---------- */
 .call-bar {
-  position: fixed; right: 20px; bottom: 20px; z-index: 60;
-  display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 60;
+  display: none; align-items: center; justify-content: center; gap: .5rem;
   background: linear-gradient(180deg, var(--gold-2), var(--gold));
-  color: #241c00; font-weight: 700; font-size: 1rem;
-  padding: .95rem 1.5rem; border-radius: 999px;
-  box-shadow: 0 10px 30px -6px rgba(212,175,55,.55), 0 14px 34px -10px rgba(0,0,0,.7);
-  transition: transform .18s var(--ease), box-shadow .2s var(--ease);
-  animation: bookPulse 2.6s ease-in-out infinite;
-}
-.call-bar:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 38px -8px rgba(212,175,55,.75), 0 18px 40px -12px rgba(0,0,0,.75);
-  animation-play-state: paused;
-}
-.call-bar-num { font-weight: 600; opacity: .85; border-left: 1.5px solid rgba(36,28,0,.35); padding-left: .6rem; }
-@keyframes bookPulse {
-  0%, 100% { box-shadow: 0 10px 30px -6px rgba(212,175,55,.55), 0 14px 34px -10px rgba(0,0,0,.7), 0 0 0 0 rgba(212,175,55,.45); }
-  50%      { box-shadow: 0 10px 30px -6px rgba(212,175,55,.55), 0 14px 34px -10px rgba(0,0,0,.7), 0 0 0 12px rgba(212,175,55,0); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .call-bar { animation: none; }
+  color: #241c00; font-weight: 700; padding: 1rem; border-radius: 14px;
+  box-shadow: 0 14px 34px -10px rgba(0,0,0,.7);
 }
 
 /* ---------- Reveal animation ---------- */
@@ -436,8 +420,7 @@ h1, h2, h3, h4 {
   .airport-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { grid-template-columns: 1fr; }
   .hero-trust { gap: 20px; }
-  .call-bar { left: 16px; right: 16px; bottom: 16px; display: flex; border-radius: 14px; }
-  body { padding-bottom: 76px; }
+  .call-bar { display: flex; }
   .cta { padding: 70px 0 90px; }
   .btn-lg { width: 100%; }
   .hero-actions { flex-direction: column; }
