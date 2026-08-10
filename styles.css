@@ -317,6 +317,13 @@ h1, h2, h3, h4 {
 }
 .airport strong { display: block; font-family: 'Fraunces', serif; font-size: 1.5rem; color: var(--gold-2); }
 .airport span { color: var(--muted-2); font-size: .82rem; }
+.airport-primary {
+  grid-column: 1 / -1;
+  background: linear-gradient(180deg, rgba(212,175,55,.14), rgba(212,175,55,.05));
+  border-color: rgba(212,175,55,.45);
+}
+.airport-primary strong { font-size: 1.9rem; }
+.airport-primary span { color: var(--gold-2); font-weight: 600; }
 .areas-note { color: var(--muted-2); font-size: .92rem; margin-top: 1rem; }
 
 .areas-list {

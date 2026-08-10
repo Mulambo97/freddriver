@@ -5,7 +5,7 @@ service in Connecticut & the tri-state area. Built as plain HTML/CSS/JS — no b
 step, no framework, no dependencies. Just open it or drop it on any host.
 
 ## Services featured
-Airport transfers (BDL / JFK / LGA / EWR) · Luxury black car · Corporate travel ·
+Airport transfers (BOS primary / BDL / JFK / LGA / EWR) · Luxury black car · Corporate travel ·
 Group & family travel · Appointments & errands · Around-town / hourly.
 
 **Vehicle:** 2025 Chevrolet Suburban (up to 7 passengers).
@@ -44,9 +44,12 @@ Swap them for photos of **your actual Suburban** whenever you can — same filen
 4. **Phone** — appears in several spots. Search `index.html` for `2035870022` (in the
    `tel:`/`sms:` links) and `203 587 0022` (visible text) to change it.
 
-## Deploy (free options)
-- **Netlify Drop** — drag the `freddriver` folder onto https://app.netlify.com/drop
-- **Cloudflare Pages** or **GitHub Pages** — push the folder, point it at the domain.
-- Point **freddriver.com** at whichever host you choose.
+## Deployment
+Live on GitHub Pages: https://mulambo97.github.io/freddriver/ — custom domain **freddrivers.com**
+(via the `CNAME` file). Push to `main` and the site redeploys automatically.
+
+DNS at the domain registrar must point to GitHub Pages:
+- Apex `freddrivers.com` → A records: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+- `www` → CNAME → `mulambo97.github.io`
 
 No server or database required — it's a static site.
