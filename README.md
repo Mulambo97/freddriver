@@ -39,8 +39,7 @@ Swap them for photos of **your actual Suburban** whenever you can — same filen
 2. **City / towns** — I defaulted the service area to Connecticut & tri-state (based on
    the 203 area code) with airports BDL/JFK/LGA/EWR. Update the "Service Area" section
    in `index.html` if you serve a different region.
-3. **Email** — no email was provided, so the site uses call/text only. To add one, drop
-   an `<a href="mailto:you@freddriver.com">` link in the footer Contact column.
+3. **Email** — the footer links `info@freddrivers.com` (Porkbun email forwarding).
 4. **Phone** — appears in several spots. Search `index.html` for `2035870022` (in the
    `tel:`/`sms:` links) and `203 587 0022` (visible text) to change it.
 
